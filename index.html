@@ -16,7 +16,7 @@
     
     <div class="menu">
         <img class="navbar__logo" src="https://mercelys.com/wp-content/themes/mercelys/img/logo.png" alt="">
-            <div class="menu1">
+            <div class="menu1" id="hamburger-toggle">
                 <a href="">
                     <div class="hamburger__menu"></div>
                     <div class="hamburger__menu"></div>
@@ -24,8 +24,8 @@
                 </a>
             </div>
     </div>
-    <nav >
-        <ul class="mobile-view">
+    <nav>
+        <ul class="mobile-view open" id="navbar">
             <li class="navbar__item-mobile">
                 <a href="/" class="navbar__links">
                 HOME    
@@ -207,10 +207,14 @@ Frozen Fruit: Love at Frost Sight!
                     <li class="footer__item">CONTACT US</li>
                 </ul>
             </div>
-            <div class="footer__enquiry">
-                <h2>Menu</h2>
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            
+                <h2 class="footer__navbar__links">DISTRIBUTOR ENQUIRY</h2>
+                <div class="footer__enquiry">
+    <input type="text" class="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <button class="send-button">SEND</button>
+</div>
             </div>
+           
         </div>
         <div class="footer__socials">
             <ul class="footer__socials__links">
@@ -241,5 +245,7 @@ Frozen Fruit: Love at Frost Sight!
         </div>
     </div>
    </footer>
+   <script src="app.js"></script>
 </body>
+
 </html>
