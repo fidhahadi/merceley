@@ -96,8 +96,17 @@
         font-size: x-large;
         font-weight: bold;
         text-align: center;
-        padding:90px 20px 90px 70px;
+        padding:60px 20px 90px 70px;
+        position: relative;
+  animation: mymove 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
     }
+    @keyframes mymove {
+        from {left: -90px;}
+        to {left: 20px;}
+      }
+
     .menu{
         height: 10px;
         margin: 30px;
@@ -378,9 +387,6 @@
         height: 600px;
         width: 500px;
         float: right;
-        animation-name: fadeInOut, moveLeft300px, bounce;
-animation-duration: 2.5s, 5s, 1s;
-animation-iteration-count: 2, 1, 5;
     }
 
 .introduction{
@@ -468,7 +474,6 @@ font-size: larger;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px;
     }
     .btn{
         padding: 0px 90px;
@@ -555,8 +560,10 @@ font-size: larger;
 }
 .flavory__tales__video__p{
     color: #a59963;
+    text-align: center;
     font-size: medium;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 .iframe__videos{
     display: flex;
