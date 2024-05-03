@@ -1,5 +1,5 @@
 const hamburgerToggle = document.querySelector("#hamburger-toggle");
-const navbar = document.querySelector("#navbar");
+const navbar = document.querySelector("#navbar-mobile");
 
 
 hamburgerToggle.addEventListener("click", onHamburgerClick);

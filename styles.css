@@ -48,10 +48,29 @@
         padding: 0;
         font-family:  'Times New Roman', Times, serif ;
     }
-    .mobile-view{
-        margin: unset;
-        padding: unset;
+   
+
+    .navbar-mobile.open ul{
+        display: block;
     }
+    .navbar-mobile.open .nav-toggle{
+        display: block;
+    }
+
+    .navbar-mobile.open a{
+        display: block;
+    }
+
+    .navbar-mobile .nav-toggle{
+        display: none;
+    }
+    .navbar-mobile.open {
+        display: block;
+    }
+    .navbar-mobile{
+        display: none;
+    }
+
     .navbar__logo{
         width: 80px;
         height: 80px;
@@ -375,6 +394,9 @@
     .menu{
         display: none;
     }
+    .navbar-mobile{
+        display: none;
+    }
 
     .banner__container{
         height: 600px;
@@ -426,6 +448,37 @@ font-size: larger;
     height: 50px;
     color: antiquewhite;
 }
+
+.tooltiptext{
+    position: absolute;
+    border: none;
+    background-color: #b9e6ff;
+    width: 150px;
+    min-height: 20px;
+    color: #9e7e2a;
+    padding: .3rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1rem;
+    bottom: 2rem;
+    right: -3rem;
+    visibility: hidden;
+  }
+  
+  .tooltiptext::after{
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fa3c58;
+    top: 58px;
+    left: 78px;
+  }
+  
+  .h5:hover .tooltiptext{
+    visibility: visible;
+  }
 
 .features__links{
     display: flex;
