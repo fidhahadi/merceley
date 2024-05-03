@@ -278,6 +278,7 @@
     }
     .footer__elements{
         display: flex;
+        font-family: sans-serif;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-evenly;
@@ -286,30 +287,64 @@
         margin:10px;
         width: 90%;
         display: flex;
-        
         align-items: flex-start;
     }
     .footer__navbar{
-        width: 50%;
+        margin: 10px;
+        width: 98%;
+        height: 40px;
     }
     .footer__navbar__links{
-        display: grid;
+        display: flex;
         color: #9e7e2a;
-        font-size: 0.8rem;
+        font-size: small;
         font-family:  sans-serif;  
-          font-weight: bold;
-          row-gap: 5px;
-        grid-template-columns: auto auto auto auto auto auto;
-        padding: 10px;
+        font-weight: bold;
+        padding: 5px 25px;
     }
     .footer__item{
-        padding: 5px;
+        padding: 0 5px;
         font-size: 11px;
         text-align: center;
       }
-      .mySearch{
+      .footer__elements{
+        display: flex;
+        align-items: end;
+        justify-content: stretch;
+    }
+    .footer__enquiry{
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0 0 0 10px;
+        align-items: start;
+    }
+    .dist_enq{
+        margin: 0 20px;
+        color: #a59963;
+        font-size: 0.8rem;
+        font-family:  sans-serif;  
+        font-weight: bold;
+    }
+    .dist_enquiry{
+        width: 50%;
+        display: flex;
+        text-align: inherit;
+    }
+    .mySearch{
+margin: 10px;        
+width: 300px;
+padding: 10px;
+        height: 30px;
         border-radius: 20px;
       }
+    .dist_enquiry{
+        width: 80%;
+        height: 75px;
+        margin: 0;
+        padding: 10px 5px;
+        display: flex;
+    }
       
       .send-button{
         padding: 5px 5px;
@@ -320,14 +355,17 @@
         height: 35px;
         color: #FAF9F6;
         border-radius: 30px;
-        size: 1.0rem;
+font-size: small;
 }
 
       .footer__socials{
-        margin: 10px;
+        margin: 0 45px;
         width: 65%;
         display: flex;
     
+    }
+    .footer__navbar__links{
+        font-family:  sans-serif;  
     }
       .footer__socials__links{
         display: flex;
@@ -337,6 +375,22 @@
         max-width: 70%;
         max-height: 50%;
         column-gap: 6px;   
+    }
+    .line {
+        border-bottom: 1px solid #a59963;
+        margin-top: 5px;
+        margin-left: 40px;
+        width: 90%;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer__copyright{
+        margin: 0px 30px;
+        width: 50%;
+        color: #a59963;
+        font-size: small;
+        padding: 10px;
     }
 }
 .navbar__menu {
@@ -550,6 +604,7 @@ font-size: larger;
     .footer{
         background: #b9e6ff;
         height: 350px;   
+        padding: 20px;
     }
     .footer__container{
         margin: 0px 100px;
@@ -569,18 +624,26 @@ font-size: larger;
     }
     .footer__enquiry{
         width: 50%;
-        display: flex;
+        display: block;
         padding: 10px 180px;
         align-items: flex-start;
     }
+    .dist_enq{
+        margin: 0 15px;
+        color: #a59963;
+        font-size: 0.8rem;
+        font-family:  sans-serif;  
+        font-weight: bold;
+    }
     .dist_enquiry{
         width: 50%;
-        margin: 0;
-        display: block;
+        display: flex;
         text-align: inherit;
     }
     .mySearch{
-        width: 100%;
+margin: 10px;        
+width: 300px;
+padding: 10px;
         height: 30px;
         border-radius: 20px;
       }
@@ -607,7 +670,7 @@ font-size: larger;
         color: #a59963;
         font-size: 0.8rem;
         font-family:  sans-serif;  
-          font-weight: bold;
+        font-weight: bold;
     }
     .footer__socials{
         margin: 10px 100px;
@@ -630,8 +693,11 @@ font-size: larger;
     .line {
         border-bottom: 1px solid #a59963;
         margin-top: 5px;
-        width: 100%;
+        margin-left: 110px;
+        width: 90%;
         padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .footer__copyright{
         margin: 0px 100px;
@@ -667,10 +733,4 @@ font-size: larger;
     border-radius: 20px;
     height: 220px;
     width: 350px;
-}
-.line {
-    border-bottom: 1px solid #a59963;
-    margin-top: 5px;
-    width: 100%;
-    padding-bottom: 20px;
 }
