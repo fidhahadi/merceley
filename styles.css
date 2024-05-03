@@ -1,12 +1,13 @@
 *{
     box-sizing: border-box;
+    top: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     font-family:  'Times New Roman', Times, serif ;
 }
 .navbar {
-    background: #b9e6ff	;
-    height: 150px;
+    background: #FAF9F6	;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,8 +49,6 @@
         padding: 0;
         font-family:  'Times New Roman', Times, serif ;
     }
-   
-
     .navbar-mobile.open ul{
         display: block;
     }
@@ -311,8 +310,9 @@
       .mySearch{
         border-radius: 20px;
       }
-.send-button{
-    padding: 5px 5px;
+      
+      .send-button{
+        padding: 5px 5px;
         margin: 10px;
         background-color: #572D79;
         text-align: center;
@@ -399,8 +399,10 @@
     }
 
     .banner__container{
-        height: 600px;
+        padding: 20px;
+        height: 700px;
         display: flex;
+        background: #b9e6ff;
     }
 
     .banner__section1{
@@ -419,6 +421,7 @@
         padding:180px 40px 180px 300px;
     }
     .banner__image{
+        padding: 0px 0px;
         height: 600px;
         width: 500px;
         float: right;
@@ -449,36 +452,23 @@ font-size: larger;
     color: antiquewhite;
 }
 
-.tooltiptext{
-    position: absolute;
-    border: none;
-    background-color: #b9e6ff;
-    width: 150px;
-    min-height: 20px;
-    color: #9e7e2a;
-    padding: .3rem;
-    text-align: center;
-    border-radius: .5rem;
-    font-size: 1rem;
-    bottom: 2rem;
-    right: -3rem;
+.features__item1 .tooltiptext{
+    
     visibility: hidden;
-  }
-  
-  .tooltiptext::after{
-    content: "";
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
     position: absolute;
-    border-left: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #fa3c58;
-    top: 58px;
-    left: 78px;
+    z-index: 1;
   }
   
-  .h5:hover .tooltiptext{
+  .features__item1:hover .tooltiptext {
     visibility: visible;
   }
+
 
 .features__links{
     display: flex;
@@ -559,29 +549,53 @@ font-size: larger;
     
     .footer{
         background: #b9e6ff;
-        height: 320px;   
+        height: 350px;   
     }
     .footer__container{
         margin: 0px 100px;
-        padding: 20px 100px;
+        padding: 0px 0px;
     }
 
     .footer__logo{
         width: 30%;
         height: 30%;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     
     }
     .footer__elements{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items: end;
+        justify-content: stretch;
     }
     .footer__enquiry{
         width: 50%;
         display: flex;
-        align-items: end;
+        padding: 10px 180px;
+        align-items: flex-start;
     }
+    .dist_enquiry{
+        width: 50%;
+        margin: 0;
+        display: block;
+        text-align: inherit;
+    }
+    .mySearch{
+        width: 100%;
+        height: 30px;
+        border-radius: 20px;
+      }
+         .send-button{
+        padding: 5px 20px;
+        margin: 10px;
+        background-color: #572D79;
+        text-align: center;
+        width: 70px;
+        height: 35px;
+        color: #FAF9F6;
+        border-radius: 30px;
+        font-size: small;
+        size: 0.6rem;
+}
     .footer__navbar{
         width: 50%;
         padding-bottom: 20px;
@@ -596,12 +610,14 @@ font-size: larger;
           font-weight: bold;
     }
     .footer__socials{
+        margin: 10px 100px;
         width: 50%;
         display: flex;
     
     }
 
     .footer__socials__links{
+        padding: 0px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -610,6 +626,19 @@ font-size: larger;
         max-height: 30%;
         column-gap: 5px;
         
+    }
+    .line {
+        border-bottom: 1px solid #a59963;
+        margin-top: 5px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .footer__copyright{
+        margin: 0px 100px;
+        width: 50%;
+        color: #a59963;
+        font-size: small;
+        padding: 10px;
     }
 }
 .banner{
@@ -644,9 +673,4 @@ font-size: larger;
     margin-top: 5px;
     width: 100%;
     padding-bottom: 20px;
-}
-.footer__copyright{
-    color: #a59963;
-    font-size: small;
-    padding-top: 10px;
 }
